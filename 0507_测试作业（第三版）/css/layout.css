@@ -1,0 +1,33 @@
+/* 初始化CSS */
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{margin:0;padding:0;}
+fieldset,img{border:none;}
+address,caption,cite,code,dfn,th,var{font-style:normal; font-weight:normal;}
+ul,ol{list-style:none;}
+select,input{vertical-align:middle;}
+select,input,textarea{font-size:12px;margin:0;}
+table{border-collapse:collapse;}
+body{background:#fff;color:#333;font:12px/22px 'Microsoft Yahei','微软雅黑','Simsun','宋体','Arial';}
+/* 页面通用部分 */
+.clearfix:after{content:".";display:block;height:0;visibility:hidden;clear:both;}
+.clearfix{zoom:1;}
+.clearit{clear:both;height:0;font-size:0;overflow:hidden;}
+a{color:#1f3b7b;text-decoration:none;}
+a:visited{color:#6079b2;}
+a:hover,a:active,a:focus{color:#8d0000;text-decoration:underline;}
+*{padding:0;margin:0;}
+/*body{width:100%;height:;}*/
+.header{width:100%;height:61px;background-color:#f7f7f7;}
+.slide{width:1240px;height:90px;margin:0 auto;padding:16px 0;}
+.nav{width:1240px;height:91px;margin:0 auto;}
+.content{width:1240px;height:981px;margin:0 auto;background-color:#fff;}
+.content-title{position:relative;width:100%;height:70px;line-height:70px;}/*padding-top:21px;padding-bottom:30px;}*/
+.content .content-stockmarket{float:left;width:260px;height:914px;}
+.content .content-zixuangu-recent{height:434px;padding-bottom:30px;border-top:3px solid #2076ce;}
+.content .content-hangyeduibi{position:relative;height:444px;border-top:3px solid #2076ce;}
+.content .content-block{float:left;width:660px;height:914px;margin:0 30px;}
+/*.content .content-stock-market2{float:left;width:260px;height:914px;}*/
+.content .content-chengjiao-junjia{position:relative;height:427px;border-top:3px solid #2076ce;}
+.content .content-rengou-rengu{height:220px;border-top:3px solid #2076ce;}
+.content .content-niuzheng-xiongzheng{height:258px;border-top:3px solid #2076ce;}
+
+

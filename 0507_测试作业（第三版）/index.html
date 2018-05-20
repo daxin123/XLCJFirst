@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>新浪财经</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/base.css">
+
+    </head>
+    <body>
+        <!--hearder区域start-->
+        <div class="header">
+            <!--header-content开始-->
+            <div class="header-content">
+                <div class="logo-image"><img class="logo" src="img/logo.png" height="31px" width="176px"></div>
+                <div class="header-linkto">
+                    <a href="#">财经首页</a>
+                    <span class="space">|</span>
+                    <a href="#">新浪首页</a>
+                    <span class="space">|</span>
+                    <a href="#">新浪导航</a>
+                </div>
+                <!--header-linkTo结束-->
+                    <!--header-user开始-->
+                    <div class="header-user">
+                        <div class="login-icon"><img src="img/eye.png" height="37px" width="37px"></div>
+                        <div class="user-function">
+                        <a class="user-login" href="#">登陆</a>
+                        <a href="#" class="user-register">注册</a>
+                        <a href="#" class="user-message">消息</a>
+                        </div>
+                    </div>
+                    <!--header-user结束-->
+            </div>
+            <!--header-content结束-->
+        </div>
+        <!--header区域end-->
+        <!--slide区域start-->
+        <div class="slide">
+            <img src="img/slide-part.png" alt="紫阙"height="90px" width="1240px">
+        </div>
+        <!--slide区域end-->
+        <!--nav区域start-->
+        <div class="nav">
+            <!--nav-tab开始-->
+            <ul class="nav-tab">
+                <li class="active"><a href="#" >财经首页</a></li>
+                <li class="active-next"><a href="#">港股首页</a></li>
+                <li><a href="#">港股自选</a></li>
+                <li><a href="#">港股滚动</a></li>
+                <li><a href="#">实时公告</a></li>
+                <li><a href="#">微博圈</a></li>
+                <li><a href="#">互动空间</a></li>
+                <li><a href="#">港股论坛</a></li>
+                <li><a href="#">A股</a></li>
+                <li><a href="#">美股</a></li>
+                <li><a href="#">个股评级</a></li>
+                <li><a href="#">新股</a></li>
+                <li><a href="#">权证资讯</a></li>
+                <li><a href="#">行情中心</a></li>
+                <li><a href="#">环球股指</a></li>
+            </ul>
+            <!--nav_tab结束-->
+            <!--nav-info开始-->
+            <div class="nav-info">
+                <span class="info-type">环球市场</span>
+                <div class="info-change">
+                    <a href="#"><i class="change-up"></i></a>
+                    <a href="#"><i class="change-down"></i></a>
+                </div>
+                <span class="nav-info-1 no-icon">上证指数:<span class="info-index1">2326.50</span><span class="info-index2">0.00%</span><span class="info-index3">1729.08亿元</span>
+                </span>
+                <span class="nav-info-2">
+                    <span><i class="jiantou-up"></i>恒生指数:<span class="info-index up"><span class="info-index1">23403.969</span><span class="info-index2">315.39</span><span class="info-index3">+1.37%</span></span></span>
+                </span>
+                <span class="nav-info-3">
+                    <span><i class="jiantou-up"></i>国企指数:<span class="info-index up"><span class="info-index1">10426.89</span><span class="info-index2">150.91</span><span class="info-index3">+1.47%</span></span></span>
+                </span>
+                <span class="nav-info-4">
+                    <span><i class="jiantou-down"></i>红筹指数:<span class="info-index down"><span class="info-index1">4437.92</span><span class="info-index2">32.38</span><span class="info-index3">-0.73%</span></span></span>
+                </span>
+            </div>
+            <!--nav-info结束-->
+        </div>
+        <!--nav区域end-->
+        <!-- content区域 start -->
+        <div class="content">
+            <!--content-title开始-->
+            <div class="content-title">
+                <div class="content-title-linkto">
+                    <a href="#">财经中心</a><span class="gt">&gt;</span>
+                    <a href="#">行情中心</a><span class="gt">&gt;</span>
+                    <a href="#">港股</a><span class="gt">&gt;</span>
+                    <a href="#">软件服务</a><span class="gt">&gt;</span>
+                    <a href="#" class="active">腾讯控股</a>
+                </div>
+                <div class="content-title-search">
+                    <input class="search-box" type="text" placeholder="代码/拼音/简称">
+                    <a href="#"><i class="fangdajing"></i></a>
+                </div>
+            </div>
+            <!--content-title结束-->
+            <!--content-stockmarket开始-->
+            <div class="content-stockmarket">
+            <!--content-zixuangu-recent开始-->
+            <div class="content-zixuangu-recent">
+                <!--content-tab开始-->
+                <div class="content-tab">
+                    <span id="recent_button" onclick="recentClick()" class="choose"><a href="#">最近访问</a></span>
+                    <span id="zixuangu_button" onclick="zixuanguClick()" class="choose active"><a href="#">自选股</a></span>
+                </div>
+                <!--contet-tab结束-->
+                    <table id="zixuangu" class="zixuangu">
+                        <tr class="zixuangu-title">
+                            <th class="stock-name">名称</th>
+                            <th class="stock-price">最近价</th>
+                            <th class="stock-zhangdiefu">涨跌幅</th>
+                        </tr>
+                        <tr class="first-line"></tr>
+                        <tr >
+                            <td class="first-column"><a href="#">中国石油股份</a></td>
+                            <td class="down">999.99</td>
+                            <td class="down">-1.754%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">工商银行</a></td>
+                            <td class="up">38.31</td>
+                            <td class="up">+1.591%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">中国石油化工股份</a></td>
+                            <td class="down">215.65</td>
+                            <td class="down">-99.999%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">中国航天工业</a></td>
+                            <td class="down">69.17</td>
+                            <td class="down">-2.941%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">威化达控股</a></td>
+                            <td class="up">69.17</td>
+                            <td class="up">+6.599%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">华润电力</a></td>
+                            <td class="up">34.30</td>
+                            <td class="up">+4.622%</td>
+                        </tr>
+                         <tr>
+                            <td class="first-column"><a href="#">中国移动</a></td>
+                            <td class="up">68.33</td>
+                            <td class="up">+0.079%</td>
+                        </tr>
+                         <tr>
+                            <td class="first-column"><a href="#">中国银行</a></td>
+                            <td class="up">84.99</td>
+                            <td class="up">+0.994%</td>
+                        </tr>
+                         <tr>
+                            <td class="first-column"><a href="#">香港电讯—SS</a></td>
+                            <td class="down">170.93</td>
+                            <td class="down">-2.703%</td>
+                        </tr>
+                         <tr>
+                            <td class="first-column"><a href="#">和记电讯香港</a></td>
+                            <td class="up">38.67</td>
+                            <td class="up">+1.887%</td>
+                        </tr>
+
+                    </table>
+                    <table id="zuijinfangwen" class="zuijinfangwen">
+                        <tr class="zuijinfangwen-title">
+                            <th class="stock-name">名称</th>
+                            <th class="stock-price">最近价</th>
+                            <th class="stock-zhangdiefu">涨跌幅</th>
+                        </tr>
+                        <tr class="first-line"></tr>
+                           <tr>
+                            <td class="first-column"><a href="#">中国移动</a></td>
+                            <td class="up">68.33</td>
+                            <td class="up">+0.079%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">中国银行</a></td>
+                            <td class="up">84.99</td>
+                            <td class="up">+0.994%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">香港电讯—SS</a></td>
+                            <td class="down">170.93</td>
+                            <td class="down">-2.703%</td>
+                        </tr>
+                         <tr>
+                            <td class="first-column"><a href="#">和记电讯香港</a></td>
+                            <td class="up">38.67</td>
+                            <td class="up">+1.887%</td>
+                        </tr>
+                        <tr >
+                            <td class="first-column"><a href="#">中国石油股份</a></td>
+                            <td class="down">999.99</td>
+                            <td class="down">-1.754%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">工商银行</a></td>
+                            <td class="up">38.31</td>
+                            <td class="up">+1.591%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">中国石油化工股份</a></td>
+                            <td class="down">215.65</td>
+                            <td class="down">-99.999%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">中国航天工业</a></td>
+                            <td class="down">69.17</td>
+                            <td class="down">-2.941%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">威化达控股</a></td>
+                            <td class="up">69.17</td>
+                            <td class="up">+6.599%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">华润电力</a></td>
+                            <td class="up">34.30</td>
+                            <td class="up">+4.622%</td>
+                        </tr>
+                    </table>
+                    <div class="manage-tab"><a href="#">管理组选股</a></div>
+            </div>
+            <!--content-zixuangu-recent结束-->
+            <!--content-hangyeduibi开始-->
+            <div class="content-hangyeduibi">
+                <div class="compare-title">
+                    <span class="compare-text">行业对比</span>
+                    <div class="select" onclick="selectFn()">
+                        <div class="selected" id="selected">资金静入流</div>
+                        <div id="select_button" class="select-button"></div>
+                    </div>
+                    <div class="compare-content" id="compare_content">
+                         <p class="selection" id="selection1" onmouseover="mouseOverFn(this)" onclick="selectContent(this)" onmouseOut="mouseOutFn(this)">资金静入流</p>
+                         <p class="selection" id="selection2" onmouseover="mouseOverFn(this)" onclick="selectContent(this)" onmouseOut="mouseOutFn(this)">XXXXX</p>
+                    </div>
+                    <!--<select class="compare-select">
+                        <option>资金静入流</option>
+                    </select>-->
+                </div>
+                <!--compare-title结束-->
+                <table class="hangyeduibi">
+                        <tr class="hangyeduibi-title">
+                            <th class="stock-name">名称</th>
+                            <th class="stock-price">最近价</th>
+                            <th class="stock-zhangdiefu">涨跌幅</th>
+                        </tr>
+                        <tr class="first-line"></tr>
+                        <tr>
+                            <td class="first-column"><a href="#">中国石油化工股份</a></td>
+                            <td class="down">215.65</td>
+                            <td class="down">-99.999%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">中国航天工业</a></td>
+                            <td class="down">69.17</td>
+                            <td class="down">-2.941%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">威华达控股</a></td>
+                            <td class="up">116.10</td>
+                            <td class="up">+6.599%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">华润电力</a></td>
+                            <td class="up">34.30</td>
+                            <td class="up">+4.622%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">中国移动</a></td>
+                            <td class="up">68.33</td>
+                            <td class="up">+0.079%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">中国银行</a></td>
+                            <td class="up">84.99</td>
+                            <td class="up">+0.994%</td>
+                        </tr>
+                         <tr>
+                            <td class="first-column"><a href="#">香港电讯—SS</a></td>
+                            <td class="down">170.93</td>
+                            <td class="down">-2.703%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">和记电讯香港</a></td>
+                            <td class="up">38.67</td>
+                            <td class="up">+1.887%</td>
+                        </tr>
+                         <tr>
+                            <td class="first-column"><a href="#">中国石油股份</a></td>
+                            <td class="down">999.99</td>
+                            <td class="down">-1.754%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">工商银行</a></td>
+                            <td class="up">38.31</td>
+                            <td class="up">+1.591%</td>
+                        </tr>
+                         <tr>
+                            <td class="first-column"><a href="#">建设银行</a></td>
+                            <td class="down">69.17</td>
+                            <td class="down">-1.754%</td>
+                        </tr>
+                    </table>
+            </div>
+            <!--content-left-bottom结束-->
+            </div>
+            <!--content-stockmarket结束-->
+            <!--content-block开始-->
+            <div class="content-block">
+                <!--stock-info开始-->
+                <div class="stock-info">
+                <!--stock-info-title开始-->
+                <div class="stock-info-title">
+                    <span class="stock-info-name">腾讯控股</span> <span class="stock-info-id">00700.HK</span><span class="stock-info-Ename">(TENCENT)</span>
+                    <span class="addtozixuan"><a href="#"><i class="add-icon"></i></a><a href="#">加入自选股</a></span>
+                    <span class="getgusuixiangqing"><a href="#">获取碎股行情</a></span>
+                </div>
+                <!--stock-info-title结束-->
+                <!--stock-info-data开始--> 
+                <div class="stock-info-data">
+                    <span class="price">122.00<i class="price-icon"></i></span>
+                    <div class="realtime-data">
+                        <div class="data">
+                            <p><span class="tencent-zhangdiefu">-4.10(-3.250%)</span><span class="danwei">港元</span></p>
+                            <p><span class="jianju">2014-10-23</span><span class="jianju">11:22:45</span><span>午盘中</span></p>
+                        </div>
+                        <span class="update-realtime-tab"><a href="#"><i class="update-icon"></i></a><a href="#">更新实时行情</a></span>
+                    </div>
+                    
+                    <p class="message"><span class="type">【沪】</span><span class="name">腾讯控股</span><span class="id">00700.SH</span><span class="stock-price">140.00</span><span class="zhangdiefu">+3.500%</span><span class="yijia">A/H溢价</span><span class="yijiazhi">0.95</span><span class="edushengyuzhi">10.00亿</span><span class="edushengyu">每日北向额度剩余</span>
+                    </p>
+                    <!--table-block开始-->
+                    <div class="table-block">
+                        <table class="stock-yesterday">                        
+                        <tr>
+                            <td class="first-column">昨收盘</td>
+                            <td class="second-column">122.45</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column">振幅</td>
+                            <td class="second-column">3.430%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column">加格档</td>
+                            <td class="second-column">0.01元</td>
+                        </tr>
+                    </table>
+                    <table class="stock-today">                        
+                        <tr>
+                            <td class="first-column">今开盘</td>
+                            <td class="second-column">122.45</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column">市盈率</td>
+                            <td class="second-column">34.33</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column">每手股数</td>
+                            <td class="second-column">100</td>
+                        </tr>
+                    </table>
+                    <table class="stock-total-price">                        
+                        <tr>
+                            <td class="first-column">成交额</td>
+                            <td class="second-column">250亿</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column">总股本</td>
+                            <td class="second-column">934，253.92万</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column">港股市值</td>
+                            <td class="second-column">250亿</td>
+                        </tr>
+                    </table>
+                    <table class="stock-total-volume">                  
+                        <tr>
+                            <td class="first-column">成交量</td>
+                            <td class="second-column">310.40万手</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column">港股股本</td>
+                            <td class="second-column">934，253.92万</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column">周息率</td>
+                            <td class="second-column">310.40万手</td>
+                        </tr>
+                    </table>
+                    
+                    </div>
+                    <p class="real-notice"><a href="#">实时公告：2014年中报发布</a><a href="#" class="more">更多&gt;&gt;</a></p>
+                    <!--table-block结束-->
+                </div>
+                <!--stock-info-data结束-->    
+                </div>
+                <!--stock-info结束-->
+                <!--stock-k-line开始-->
+                <div class="stock-k-line">
+                <div class="choose-part"> <a href="#" class="k-line-tab active">分时</a><a href="#" class="k-line-tab">日k</a><a href="#" class="k-line-tab">周k</a><a href="#" class="k-line-tab">月k</a><a href="#" class="full-screen"><i class="full-screen-icon"></i>全屏观看</a><a href="#" class="share"><i class="share-icon"></i>我要分享</a><a href="#"class="level2hangqing">level2行情</a></div>
+                    <a href="#" class="diejiaagu">叠加A股</a>
+                    <div class="k-line-area">
+                        <div class="chart"><img src="img/fenbu.png" height="398px" width="660px"></div>
+                         <p class="state">港股实时基本行情由<span class="xianggangjiaoyisuo">香港交易所</span>指定新浪网免费发放<span class="jianju"></span>|<a class="mianzeshengming" href="#">免责声明</a>|<a href="#" class="caihuashe">财华社港股实时行情</a></p>
+                    </div>
+                <div class="trend"><span class="zoushiduibi">走势对比:</span>
+                    <div class="choose" onclick="chooseFn()">
+                        <div class="choosen" id="choosen">大盘指数</div>
+                        <div id="choose_button"  class="select-button"></div>
+                    </div>
+                    <div class="inputBox">
+                        <input class="compare-stock" type="text" placeholder="代码/拼音/简称" value="">
+                    </div>
+                    <input class="compare" type="submit" value="对比">
+                    <div class="choose-content" id="choose_content">
+                         <p class="choice" id="choice1" onmouseover="mouseOverFn(this)" onclick="chooseCon(this)" onmouseOut="mouseOutFn(this)">大盘指数</p>
+                         <p class="choice" id="choice2" onmouseover="mouseOverFn(this)" onclick="chooseCon(this)" onmouseOut="mouseOutFn(this)">XXXXX</p>
+                    </div>
+                        <!--<select><option>大盘指数</option></select>
+                        <input type="compare-stock" placeholder="代码/拼音/简称">
+                        <input class="compare" type="submit" value="对比">-->
+                </div>
+                </div>
+                <!--stock-k-line结束-->
+            </div>
+            <!--content-block结束-->
+            <!--content-stockmarket开始-->
+            <div class="content-stockmarket" id="content_stockmarket">
+                <!--content-right-top开始-->
+                <div class="content-chengjiao-junjia" id="content_chengjiao_junjia">
+                    <div class="content-tab">
+                        <span id="chengjiao_button" onclick="chengjiaoClick()" class="choose active"><a href="#">成交分布</a></span>
+                        <span id="junjia_button" onclick="junjiaClick()" class="choose"><a href="#">均价/波幅</a></span>
+                    </div>
+                    <div class="chengjiao-fenbu" id="chengjiao_fenbu">
+                        <div class="chengjiao-part">
+                             <p class="title"><span class="price-tite">价格（元）</span><span class="chengjiaoliang-title">成交（万手）</span></p>
+                             <ul class="chengjiaofenbu-chart">
+                             <li><span class="price">120.50</span><i class="bg-bottom"><i class="bg-top bg-top-1"></i></i><span class="chengjiao">100.423</span></li>
+                             <li><span class="price">120.52</span><i class="bg-bottom"><i class="bg-top bg-top-2"></i></i><span class="chengjiao">85.344</span></li>
+                             <li><span class="price">120.28</span><i class="bg-bottom"><i class="bg-top bg-top-3"></i></i><span class="chengjiao">34.132</span></li>
+                             <li><span class="price">120.49</span><i class="bg-bottom"><i class="bg-top bg-top-4"></i></i><span class="chengjiao">30.273</span></li>
+                             <li><span class="price">130.21</span><i class="bg-bottom"><i class="bg-top bg-top-5"></i></i><span class="chengjiao">30.140</span></li>
+                             <li><span class="price">121.32</span><i class="bg-bottom"><i class="bg-top bg-top-6"></i></i><span class="chengjiao">25.890</span></li>
+                             </ul>
+                        </div>
+                        <div class="dashoubi">
+                             <p class="title">大手笔成交分布</p>
+                             <span class="on-market">市场上64%</span><i class="bg-out"><i class="bg-on"></i></i><span class="out-market">市场下36%</span>
+                         
+                             <p class="dashou-junjia">大手成交均价：<span class="jianju"></span>121.34万手</p>
+                             <p class="dashou-zongjia">大手成交总价：<span class="jianju"></span>243.45万手</p>
+                             <span class="xiangguanquanzheng">相关权证<a class="more" href="#">更多&gt;&gt;</a></span>
+                        </div>
+                    </div>
+                    <div class="junjia" id="junjia">
+                        <ul>
+                            <li><span class="duration">5日均价</span><span class="junjiazhi">122.84</span></li>
+                            <li><span class="duration">10日均价</span><span class="junjiazhi">120.33</span></li>
+                            <li><span class="duration">30日均价</span><span class="junjiazhi">122.22</span></li>
+                            <li><span class="duration">90日均价</span><span class="junjiazhi">122.84</span></li>
+                            <li><span class="duration">180日均价</span><span class="junjiazhi">120.33</span></li>
+                            <li><span class="duration">360日均价</span><span class="junjiazhi">122.22</span></li>
+                            <li class="jianju"></li>
+                            <li><span class="duration">1周波幅</span><span class="bofuzhi">120.1~122.56</span></li>
+                            <li><span class="duration">2周波幅</span><span class="bofuzhi">120.1~122.56</span></li>
+                            <li><span class="duration">4周波幅</span><span class="bofuzhi">120.1~122.56</span></li>
+                            <li><span class="duration">12周波幅</span><span class="bofuzhi">120.1~122.56</span></li>
+                            <li><span class="duration">26周波幅</span><span class="bofuzhi">120.1~122.56</span></li>
+                            <li><span class="duration">52周波幅</span><span class="bofuzhi">120.1~122.56</span></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!--content-right-top结束-->
+                <!--content-rengou-rengu开始-->
+                <div class="content-rengou-rengu">
+                     <div class="content-tab">
+                        <span class="choose active"><a href="#">认购</a></span>
+                        <span class="choose"><a href="#">认估</a></span>
+                    </div>
+                     <table class="rengou-rengu-table">
+                        <tr class="table-title">
+                            <th class="first-column">名称</th>
+                            <th class="second-column">涨跌幅</th>
+                        </tr>
+                        <tr>
+                            <td class="first-column first-line"><a href="#">腾讯渣打四乙沽C</a></td>
+                            <td class="second-column first-line up">+0.079%</td>
+                        </tr>
+                         <tr>
+                            <td class="first-column"><a href="#">腾讯渣打四乙沽B</a></td>
+                            <td class="second-column up">+0.994%</td>
+                        </tr>
+                         <tr>
+                            <td class="first-column"><a href="#">腾讯渣打四乙沽D</a></td>
+                            <td class="second-column down">-2.703%</td>
+                        </tr>
+                         <tr>
+                            <td class="first-column"><a href="#">腾讯渣打四乙沽A</a></td>
+                            <td class="second-column up">+1.887%</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--content-rengou-rengu结束-->
+                <!--content-niuzheng-xiongzheng开始-->
+                <div class="content-niuzheng-xiongzheng">
+                     <div class="content-tab">
+                        <span class="choose active"><a href="#">牛证</a></span>
+                        <span class="choose"><a href="#">熊证</a></span>
+                    </div>
+                     <table class="niuzheng-xiongzheng-table">
+                        <tr class="table-title">
+                            <th class="first-column">名称</th>
+                            <th class="second-column">涨跌幅</th>
+                        </tr>
+                        <tr>
+                            <td class="first-column first-line"><a href="#">腾讯汇丰四十牛C</a></td>
+                            <td class="second-column first-line up">+1.887%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">腾讯汇丰四十牛F</a></td>
+                            <td class="second-column down">-2.703%</td>
+                        </tr>
+                        <tr>
+                            <td class="first-column"><a href="#">腾讯汇丰四十牛D</a></td>
+                            <td class="second-column up">+0.079%</td>
+                        </tr>
+                         <tr>
+                            <td class="first-column"><a href="#">腾讯汇丰四十牛E</a></td>
+                            <td class="second-column up">+0.994%</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--content-niuzheng-xiongzheng结束-->
+            </div>
+            <!--content-stockmarket结束-->
+        </div>
+        <!-- content区域 end -->
+    <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>
